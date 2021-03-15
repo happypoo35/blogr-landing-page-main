@@ -1,0 +1,64 @@
+.designed {
+  margin-bottom: 16.375rem;
+
+  @include tablet {
+    margin-bottom: 17rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 7rem;
+
+    @include tablet {
+      margin-bottom: 2.75rem;
+    }
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: unset;
+      align-items: center;
+    }
+  }
+
+  .img {
+    position: relative;
+    padding-left: 3rem;
+
+    @include tablet {
+      padding-left: unset;
+      margin-bottom: 3.375rem;
+    }
+
+    &-desktop {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &-mobile {
+      display: none;
+
+      @include tablet {
+        display: unset;
+      }
+    }
+  }
+
+  img {
+    position: absolute;
+    top: calc(50% - 1rem);
+    transform: translateY(-50%);
+
+    @include tablet {
+      position: unset;
+      transform: unset;
+    }
+  }
+}

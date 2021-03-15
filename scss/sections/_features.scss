@@ -1,0 +1,54 @@
+.features {
+  margin-bottom: 19rem;
+
+  @include tablet {
+    margin-bottom: 6.25rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: unset;
+    }
+  }
+
+  &-img {
+    position: relative;
+
+    @include tablet {
+      margin-bottom: 2.625rem;
+    }
+
+    &-desktop {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &-mobile {
+      display: none;
+
+      @include tablet {
+        display: unset;
+      }
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include tablet {
+      position: unset;
+      transform: unset;
+    }
+  }
+}

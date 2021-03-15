@@ -1,0 +1,48 @@
+.nav-item-modal {
+  position: relative;
+  text-align: center;
+
+  &.active {
+    .nav-item-modal-drop {
+      margin-top: 1.375rem;
+      padding: 1.75rem 0 1.5rem;
+      max-height: 20rem;
+    }
+
+    span {
+      color: rgba($Very-dark-blue-headings, 0.7);
+    }
+
+    i {
+      transform: translateY(-0.125rem) rotate(-180deg);
+    }
+  }
+
+  span {
+    cursor: pointer;
+    @extend %tr;
+  }
+
+  i {
+    transform: translateY(-0.125rem);
+    margin-left: 0.5rem;
+    @extend %tr;
+  }
+
+  &-drop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba($Grayish-blue-footer-text, 0.3);
+    border-radius: 0.25rem;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    @extend %tr;
+
+    .link:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

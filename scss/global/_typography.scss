@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+.link.link-modal,
+.link.link-modal-drop {
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+
+h4,
+button,
+.link {
+  font-family: "Ubuntu", sans-serif;
+}
+
+button,
+.link-header {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: -0.03em;
+  color: white;
+
+  @include tablet {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.03em;
+  color: $Very-dark-blue-headings;
+
+  @include tablet {
+    font-size: 1.75rem;
+  }
+
+  &.white {
+    color: white;
+
+    @include tablet {
+      font-size: 2.5rem;
+      line-height: 3.125rem;
+    }
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: $Very-dark-blue-headings;
+
+  @include tablet {
+    line-height: 2rem;
+  }
+}
+
+h4 {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: white;
+
+  @include tablet {
+    font-size: 1.125rem;
+  }
+}
+
+p {
+  letter-spacing: 0.032em;
+  line-height: 1.75;
+  color: $Very-dark-grayish-blue-body-copy;
+
+  &.white {
+    color: $Dim-White;
+  }
+
+  &.header-text {
+    font-size: 1.25rem;
+    line-height: 1.28;
+    letter-spacing: unset;
+
+    @include tablet {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  display: block;
+}
+
+.link {
+  color: $Dim-White;
+
+  &-drop {
+    color: $Very-dark-black-blue-footer-background;
+    font-size: 0.9375rem;
+  }
+
+  &-footer {
+    font-size: 0.9375rem;
+
+    @include tablet {
+      font-size: 1.125rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-modal {
+    color: $Very-dark-blue-headings;
+    font-size: 1.125rem;
+
+    i {
+      color: $Very-light-red-CTA-hover-background;
+    }
+
+    &-drop {
+      color: rgba($Very-dark-blue-headings, 0.7);
+      font-size: 1rem;
+    }
+  }
+
+  i {
+    font-size: 0.6875rem;
+  }
+}

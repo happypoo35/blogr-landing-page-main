@@ -1,0 +1,67 @@
+.state {
+  background: no-repeat bottom -7rem left calc(50% - 27rem) url("../../images/bg-pattern-circles.svg"),
+    linear-gradient(to right, $Very-dark-gray-blue, $Very-dark-desaturated-blue);
+  border-bottom-left-radius: $Section-radius;
+  border-top-right-radius: $Section-radius;
+  margin-bottom: 19rem;
+
+  @include tablet {
+    background: no-repeat top -14rem center/37rem url("../../images/bg-pattern-circles.svg"),
+      linear-gradient(
+        to bottom right,
+        $Very-dark-gray-blue,
+        $Very-dark-desaturated-blue
+      );
+    margin-bottom: 3.875rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    height: 400px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+      gap: unset;
+      height: unset;
+    }
+  }
+
+  &-img {
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    right: 2.5rem;
+    transform: translateY(calc(-50% + 1rem));
+
+    @include tablet {
+      right: unset;
+      left: 50%;
+      transform: translate(-50%, calc(-50% + 1rem));
+      max-width: 24rem;
+    }
+  }
+
+  &-text {
+    align-self: center;
+
+    @include tablet {
+      text-align: center;
+      padding-top: 14.375rem;
+      padding-bottom: 7.5rem;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+
+    @include tablet {
+      margin-bottom: 1.75rem;
+    }
+  }
+}

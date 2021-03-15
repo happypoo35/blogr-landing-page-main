@@ -1,0 +1,52 @@
+.hamburger {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+
+  &-icon {
+    position: relative;
+    @extend %hamburger-line;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      @extend %hamburger-line;
+      @extend %tr;
+    }
+
+    &::before {
+      top: -0.5rem;
+    }
+
+    &::after {
+      top: 0.5rem;
+    }
+  }
+
+  &.active {
+    .hamburger-icon {
+      background: transparent;
+
+      &::before,
+      &::after {
+        top: 0;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

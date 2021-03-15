@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/App.js" defer></script>
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header pad">
+        <div class="container">
+          <div class="header-menu">
+            <a href="/" class="logo" aria-label="Blogr logo">
+              <img src="./images/logo.svg" alt="Blogr logo" />
+            </a>
+            <nav class="nav">
+              <div class="nav-item">
+                <span class="link link-header"
+                  >Product<i class="fas fa-chevron-down"></i
+                ></span>
+                <div class="nav-item-drop">
+                  <div class="links-container">
+                    <a href="/" class="link link-drop">Overview</a>
+                    <a href="/" class="link link-drop">Pricing</a>
+                    <a href="/" class="link link-drop">Marketplace</a>
+                    <a href="/" class="link link-drop">Features</a>
+                    <a href="/" class="link link-drop">Integrations</a>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-item">
+                <span class="link link-header"
+                  >Company<i class="fas fa-chevron-down"></i
+                ></span>
+                <div class="nav-item-drop">
+                  <div class="links-container">
+                    <a href="/" class="link link-drop">About</a>
+                    <a href="/" class="link link-drop">Team</a>
+                    <a href="/" class="link link-drop">Blog</a>
+                    <a href="/" class="link link-drop">Careers</a>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-item">
+                <span class="link link-header"
+                  >Connect<i class="fas fa-chevron-down"></i
+                ></span>
+                <div class="nav-item-drop">
+                  <div class="links-container">
+                    <a href="/" class="link link-drop">Contact</a>
+                    <a href="/" class="link link-drop">Newsletter</a>
+                    <a href="/" class="link link-drop">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <div class="auth">
+              <a href="/" class="link link-header">Login</a>
+              <button class="btn">Sign Up</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+              <div class="hamburger-icon"></div>
+            </div>
+          </div>
+          <div class="header-intro">
+            <h1>A modern publishing platform</h1>
+            <p class="header-text white">
+              Grow your audience and build your online brand
+            </p>
+            <div class="buttons">
+              <button class="btn">Start for Free</button>
+              <button class="btn outline">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="designed pad" aria-label="introduction">
+          <div class="container">
+            <h2>Designed for the future</h2>
+            <div class="designed-grid">
+              <div class="designed-text">
+                <article class="section-article">
+                  <h3>Introducing an extensible editor</h3>
+                  <p>
+                    Blogr features an exceedingly intuitive interface which lets
+                    you focus on one thing: creating content. The editor
+                    supports management of multiple blogs and allows easy
+                    manipulation of embeds such as images, videos, and Markdown.
+                    Extensibility with plugins and themes provide easy ways to
+                    add functionality or change the looks of a blog.
+                  </p>
+                </article>
+                <article class="section-article">
+                  <h3>Robust content management</h3>
+                  <p>
+                    Flexible content management enables users to easily move
+                    through posts. Increase the usability of your blog by adding
+                    customized categories, sections, format, or flow. With this
+                    functionality, you’re in full control.
+                  </p>
+                </article>
+              </div>
+              <div class="img">
+                <img
+                  class="img-desktop"
+                  src="./images/illustration-editor-desktop.svg"
+                  alt="img"
+                />
+                <img
+                  class="img-mobile"
+                  src="./images/illustration-editor-mobile.svg"
+                  alt="img"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="state pad" aria-label="art infrastructure">
+          <div class="container">
+            <div class="state-img">
+              <img src="./images/illustration-phones.svg" alt="img" />
+            </div>
+            <div class="state-text">
+              <h2 class="white">State of the Art Infrastructure</h2>
+              <p class="white">
+                With reliability and speed in mind, worldwide data centers
+                provide the backbone for ultra-fast connectivity. This ensures
+                your site will load instantly, no matter where your readers are,
+                keeping your site competitive.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="features pad" aria-label="features">
+          <div class="container">
+            <div class="features-img">
+              <img
+                class="features-img-desktop"
+                src="./images/illustration-laptop-desktop.svg"
+                alt="img"
+              />
+              <img
+                class="features-img-mobile"
+                src="./images/illustration-laptop-mobile.svg"
+                alt="img"
+              />
+            </div>
+            <div class="features-text">
+              <article class="section-article">
+                <h3>Free, open, simple</h3>
+                <p>
+                  Blogr is a free and open source application backed by a large
+                  community of helpful developers. It supports features such as
+                  code syntax highlighting, RSS feeds, social media integration,
+                  third-party commenting tools, and works seamlessly with Google
+                  Analytics. The architecture is clean and is relatively easy to
+                  learn.
+                </p>
+              </article>
+              <article class="section-article">
+                <h3>Powerful tooling</h3>
+                <p>
+                  Batteries included. We built a simple and straightforward CLI
+                  tool that makes customization and deployment a breeze, but
+                  capable of producing even the most complicated sites.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer pad">
+        <div class="container">
+          <a href="/" class="logo" aria-label="Blogr logo">
+            <img src="./images/logo.svg" alt="Blogr logo" />
+          </a>
+          <nav>
+            <h4>Product</h4>
+            <a href="/" class="link link-footer">Overview</a>
+            <a href="/" class="link link-footer">Pricing</a>
+            <a href="/" class="link link-footer">Marketplace</a>
+            <a href="/" class="link link-footer">Features</a>
+            <a href="/" class="link link-footer">Integrations</a>
+          </nav>
+          <nav>
+            <h4>Company</h4>
+            <a href="/" class="link link-footer">About</a>
+            <a href="/" class="link link-footer">Team</a>
+            <a href="/" class="link link-footer">Blog</a>
+            <a href="/" class="link link-footer">Careers</a>
+          </nav>
+          <nav>
+            <h4>Connect</h4>
+            <a href="/" class="link link-footer">Contact</a>
+            <a href="/" class="link link-footer">Newsletter</a>
+            <a href="/" class="link link-footer">LinkedIn</a>
+          </nav>
+        </div>
+      </footer>
+      <div class="modal pad" id="modal">
+        <div class="container">
+          <nav class="nav">
+            <div class="nav-item-modal">
+              <span class="link link-modal"
+                >Product<i class="fas fa-chevron-down"></i
+              ></span>
+              <div class="nav-item-modal-drop">
+                <a href="/" class="link link-modal-drop">Overview</a>
+                <a href="/" class="link link-modal-drop">Pricing</a>
+                <a href="/" class="link link-modal-drop">Marketplace</a>
+                <a href="/" class="link link-modal-drop">Features</a>
+                <a href="/" class="link link-modal-drop">Integrations</a>
+              </div>
+            </div>
+            <div class="nav-item-modal">
+              <span class="link link-modal"
+                >Company<i class="fas fa-chevron-down"></i
+              ></span>
+              <div class="nav-item-modal-drop">
+                <a href="/" class="link link-modal-drop">About</a>
+                <a href="/" class="link link-modal-drop">Team</a>
+                <a href="/" class="link link-modal-drop">Blog</a>
+                <a href="/" class="link link-modal-drop">Careers</a>
+              </div>
+            </div>
+            <div class="nav-item-modal">
+              <span class="link link-modal"
+                >Connect<i class="fas fa-chevron-down"></i
+              ></span>
+              <div class="nav-item-modal-drop">
+                <a href="/" class="link link-modal-drop">Contact</a>
+                <a href="/" class="link link-modal-drop">Newsletter</a>
+                <a href="/" class="link link-modal-drop">LinkedIn</a>
+              </div>
+            </div>
+          </nav>
+          <div class="auth">
+            <a href="/" class="link link-modal">Login</a>
+            <button class="btn grad">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.btn {
+  cursor: pointer;
+  display: block;
+  border: none;
+  outline: none;
+  width: 8.5rem;
+  padding: 0.9375rem 0;
+  font-size: inherit;
+  background: white;
+  color: $Light-red-CTA-text;
+  border-radius: 3rem;
+  @extend %tr;
+
+  &:hover {
+    background: $Very-light-red-CTA-hover-background;
+    color: white;
+  }
+
+  &.outline {
+    padding: 0.875rem 0;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+
+    &:hover {
+      background: white;
+      color: $Very-light-red-CTA-hover-background;
+    }
+  }
+
+  &.grad {
+    background: linear-gradient(to right, $Very-light-red, $Light-red);
+    color: white;
+  }
+}

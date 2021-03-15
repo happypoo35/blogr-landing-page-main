@@ -1,0 +1,88 @@
+.header {
+  padding-top: 3.75rem;
+  background: no-repeat bottom calc(50% + 2.5rem) left calc(50% + 26rem)
+      url("../images/bg-pattern-intro.svg"),
+    linear-gradient(to right, $Very-light-red, $Light-red);
+  border-bottom-left-radius: $Section-radius;
+  min-height: 600px;
+  margin-bottom: 10rem;
+
+  @include tablet {
+    padding-top: 3.5rem;
+    background: no-repeat bottom calc(50% - 7rem) left calc(50% + 8rem) /
+        calc(100% + 60rem) url("../images/bg-pattern-intro.svg"),
+      linear-gradient(to bottom right, $Very-light-red, $Light-red);
+    margin-bottom: 6.625rem;
+  }
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7.5rem;
+  }
+
+  .logo {
+    margin-right: 4rem;
+
+    img {
+      @include tablet {
+        width: 5.125rem;
+      }
+    }
+  }
+
+  .nav {
+    flex: 1;
+    display: flex;
+
+    @include tablet {
+      display: none;
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  a.link-header:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .auth {
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+      display: none;
+    }
+
+    .btn {
+      margin-left: 2rem;
+    }
+  }
+
+  &-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin-bottom: 2.75rem;
+  }
+
+  .buttons {
+    width: min(18rem, 100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+    place-items: center;
+    gap: 1rem;
+  }
+}

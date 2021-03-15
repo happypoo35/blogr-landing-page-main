@@ -1,0 +1,71 @@
+.nav-item {
+  position: relative;
+
+  &:hover {
+    span {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .nav-item-drop {
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: unset;
+    }
+
+    i {
+      color: white;
+      transform: rotate(-180deg);
+    }
+  }
+
+  span {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    @extend %tr;
+  }
+
+  i {
+    margin-left: 0.5rem;
+    @extend %tr;
+  }
+
+  &-drop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    width: 100%;
+    background: transparent;
+    opacity: 0;
+    transform: scale(0.7);
+    pointer-events: none;
+    @extend %tr;
+  }
+
+  .links-container {
+    position: absolute;
+    top: 2.5rem;
+    left: -1.5rem;
+    background: white;
+    min-width: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.625rem 2rem rgba(black, 0.2);
+
+    a:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .link-drop {
+    @extend %tr;
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
